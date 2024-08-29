@@ -1,0 +1,116 @@
+2024-08-28T18:53:30.477Z info: Server running on port 3000
+2024-08-28T18:53:44.911Z error: Error in getFavorites: Operation `symbols.find()` buffering timed out after 10000ms
+2024-08-28T18:53:48.567Z error: Error in addToFavorites: Operation `symbols.findOne()` buffering timed out after 10000ms
+2024-08-28T18:53:49.829Z error: Error in addToFavorites: Operation `symbols.findOne()` buffering timed out after 10000ms
+2024-08-28T18:53:50.456Z error: Error in addToFavorites: Operation `symbols.findOne()` buffering timed out after 10000ms
+2024-08-28T18:53:51.076Z error: Error in addToFavorites: Operation `symbols.findOne()` buffering timed out after 10000ms
+2024-08-28T18:53:51.758Z error: Error in addToFavorites: Operation `symbols.findOne()` buffering timed out after 10000ms
+2024-08-28T18:53:54.919Z error: Error in addToFavorites: Operation `symbols.findOne()` buffering timed out after 10000ms
+2024-08-28T18:56:27.894Z info: Server running on port 3000
+2024-08-28T18:56:32.898Z error: Error connecting to MongoDB: connect ECONNREFUSED ::1:27017
+2024-08-28T18:57:57.290Z info: Server running on port 3000
+2024-08-28T18:58:02.293Z error: Error connecting to MongoDB: connect ECONNREFUSED ::1:27017
+2024-08-28T18:58:11.086Z info: Server running on port 3000
+2024-08-28T18:58:16.090Z error: Error connecting to MongoDB: connect ECONNREFUSED ::1:27017
+2024-08-28T19:07:12.785Z info: Server running on port 3000
+2024-08-28T19:07:13.408Z info: Connected to MongoDB
+2024-08-28T19:07:25.571Z info: Symbol RENDERUSDT added to favorites
+2024-08-28T19:07:35.097Z info: Symbol APTUSDT added to favorites
+2024-08-28T19:07:37.498Z info: Symbol LEVERUSDT added to favorites
+2024-08-28T19:07:42.700Z info: Symbol OGNUSDT added to favorites
+2024-08-28T19:07:44.340Z info: Symbol LTCUSDT added to favorites
+2024-08-28T19:13:44.053Z info: Server running on port 3000
+2024-08-28T19:13:44.662Z info: Connected to MongoDB
+2024-08-28T19:13:55.193Z info: Symbol LOOMUSDT added to favorites
+2024-08-28T19:13:56.769Z info: Symbol HOOKUSDT added to favorites
+2024-08-28T19:13:57.815Z info: Symbol CHRUSDT added to favorites
+2024-08-28T19:14:01.299Z info: Symbol CTSIUSDT added to favorites
+2024-08-28T19:14:03.888Z info: Symbol DGBUSDT added to favorites
+2024-08-28T19:14:06.011Z info: Symbol WIFUSDT added to favorites
+2024-08-28T19:14:56.908Z info: Server running on port 3000
+2024-08-28T19:14:57.426Z info: Connected to MongoDB
+2024-08-28T19:17:02.930Z info: Server running on port 3000
+2024-08-28T19:17:03.545Z info: Connected to MongoDB
+2024-08-28T19:18:30.249Z info: Server running on port 3000
+2024-08-28T19:18:30.855Z info: Connected to MongoDB
+2024-08-28T19:18:55.901Z info: Server running on port 3000
+2024-08-28T19:18:56.402Z info: Connected to MongoDB
+2024-08-28T19:19:36.987Z info: Server running on port 3000
+2024-08-28T19:19:37.527Z info: Connected to MongoDB
+2024-08-28T19:20:53.372Z info: Server running on port 3000
+2024-08-28T19:20:54.463Z info: Connected to MongoDB
+2024-08-28T19:22:05.493Z info: Server running on port 3000
+2024-08-28T19:22:07.103Z info: Connected to MongoDB
+2024-08-28T19:22:12.639Z info: Symbol CTSIUSDT removed from favorites
+2024-08-28T19:22:14.715Z info: Symbol APTUSDT removed from favorites
+2024-08-28T19:22:21.969Z info: Symbol LOOMUSDT removed from favorites
+2024-08-28T19:22:23.307Z info: Symbol WIFUSDT removed from favorites
+2024-08-28T19:22:26.199Z info: Symbol LEVERUSDT removed from favorites
+2024-08-28T19:22:28.502Z info: Symbol LEVERUSDT removed from favorites
+2024-08-28T19:22:30.352Z info: Symbol LEVERUSDT removed from favorites
+2024-08-28T19:22:50.863Z info: Server running on port 3000
+2024-08-28T19:22:51.591Z info: Connected to MongoDB
+2024-08-28T19:23:07.552Z info: Symbol RENDERUSDT removed from favorites
+2024-08-28T19:23:08.728Z info: Symbol CTSIUSDT removed from favorites
+2024-08-28T19:23:09.639Z info: Symbol HOOKUSDT removed from favorites
+2024-08-28T19:23:10.562Z info: Symbol DGBUSDT removed from favorites
+2024-08-28T19:23:11.393Z info: Symbol APTUSDT removed from favorites
+2024-08-28T19:23:11.801Z info: Symbol APTUSDT removed from favorites
+2024-08-28T19:23:12.127Z info: Symbol APTUSDT removed from favorites
+2024-08-28T19:23:12.323Z info: Symbol APTUSDT removed from favorites
+2024-08-28T19:23:12.385Z info: Symbol APTUSDT removed from favorites
+2024-08-28T19:23:20.979Z info: Symbol RENDERUSDT removed from favorites
+2024-08-28T19:23:21.455Z info: Symbol RENDERUSDT removed from favorites
+2024-08-28T19:23:21.763Z info: Symbol LEVERUSDT removed from favorites
+2024-08-28T19:23:21.886Z info: Symbol LEVERUSDT removed from favorites
+2024-08-28T19:23:23.664Z info: Symbol LEVERUSDT removed from favorites
+2024-08-28T19:23:24.286Z info: Symbol APTUSDT removed from favorites
+2024-08-28T19:23:24.685Z info: Symbol HOOKUSDT removed from favorites
+2024-08-28T19:23:35.633Z info: Symbol OGNUSDT removed from favorites
+2024-08-28T19:28:39.825Z info: Server running on port 3000
+2024-08-28T19:28:40.489Z info: Connected to MongoDB
+2024-08-28T19:28:48.839Z info: Symbol CTSIUSDT removed from favorites
+2024-08-28T19:28:51.086Z info: Symbol DGBUSDT removed from favorites
+2024-08-28T19:28:52.513Z info: Symbol RENDERUSDT removed from favorites
+2024-08-28T19:31:08.665Z info: Server running on port 3000
+2024-08-28T19:31:09.356Z info: Connected to MongoDB
+2024-08-28T19:31:20.039Z info: Symbol APTUSDT removed from favorites
+2024-08-28T19:31:22.421Z info: Symbol APTUSDT added to favorites
+2024-08-28T19:31:25.706Z info: Symbol LTCUSDT removed from favorites
+2024-08-28T19:31:26.608Z info: Symbol LTCUSDT added to favorites
+2024-08-28T19:31:26.909Z info: Symbol LTCUSDT removed from favorites
+2024-08-28T19:31:27.916Z info: Symbol APTUSDT removed from favorites
+2024-08-28T19:31:28.234Z info: Symbol APTUSDT added to favorites
+2024-08-28T19:31:28.813Z info: Symbol WIFUSDT removed from favorites
+2024-08-28T19:31:29.023Z info: Symbol WIFUSDT added to favorites
+2024-08-28T19:31:32.669Z info: Symbol LOOMUSDT removed from favorites
+2024-08-28T19:31:32.964Z info: Symbol LOOMUSDT added to favorites
+2024-08-28T19:31:33.805Z info: Symbol HOOKUSDT removed from favorites
+2024-08-28T19:31:36.759Z info: Symbol APTUSDT removed from favorites
+2024-08-28T19:31:41.816Z info: Symbol CHRUSDT removed from favorites
+2024-08-28T19:31:43.416Z info: Symbol LOOMUSDT removed from favorites
+2024-08-28T19:31:46.210Z info: Symbol WIFUSDT removed from favorites
+2024-08-28T19:31:57.190Z info: Symbol LEVERUSDT removed from favorites
+2024-08-28T19:31:58.987Z info: Symbol INJUSDT added to favorites
+2024-08-28T19:32:00.756Z info: Symbol GTCUSDT added to favorites
+2024-08-28T19:32:25.949Z info: Server running on port 3000
+2024-08-28T19:32:26.517Z info: Connected to MongoDB
+2024-08-28T19:32:30.645Z info: Symbol STRKUSDT added to favorites
+2024-08-28T19:32:32.146Z info: Symbol FXSUSDT added to favorites
+2024-08-28T19:32:33.458Z info: Symbol GTCUSDT removed from favorites
+2024-08-28T19:32:34.871Z info: Symbol FXSUSDT removed from favorites
+2024-08-28T19:32:36.372Z info: Symbol STRKUSDT removed from favorites
+2024-08-29T07:50:23.941Z error: Error in getFavorites: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+2024-08-29T07:50:34.000Z error: Error in getFavorites: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+2024-08-29T07:50:45.918Z error: Error in getFavorites: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+2024-08-29T07:50:56.002Z error: Error in getFavorites: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+2024-08-29T07:51:12.751Z error: Error in getFavorites: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+2024-08-29T07:51:53.101Z error: Error in getFavorites: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+2024-08-29T07:52:20.450Z error: Error in getFavorites: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+2024-08-29T07:53:28.553Z error: Error in getFavorites: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+2024-08-29T07:54:07.838Z error: Error in getFavorites: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+2024-08-29T07:56:24.236Z error: Error in getFavorites: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+2024-08-29T07:58:27.867Z error: Error in getFavorites: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+2024-08-29T07:59:11.804Z error: Error in getFavorites: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+2024-08-29T08:04:43.531Z error: Error in getFavorites: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+2024-08-29T08:07:43.465Z error: Error in getFavorites: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/

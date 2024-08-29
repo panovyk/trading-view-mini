@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradingView Mini</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        button { cursor: pointer; }
+        #favorites { display: none}
+    </style>
+</head>
+<body>
+<h1>TradingView Mini</h1>
+<div id="symbols">
+    <h2>Available Symbols</h2>
+    <table id="symbolsTable">
+        <thead>
+        <tr>
+            <th>Symbol</th>
+            <th>Ask Price</th>
+            <th>Bid Price</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+<div id="favorites">
+    <h2>Favorite Symbols</h2>
+    <ul id="favoritesList"></ul>
+</div>
+
+<script>
+    let favoriteSymbols = [];
+
+    function fetchSymbols() {
+        fetch('/api/symbols')
+            .then(response => response.json())
+            .then(data => {
+                const tableBody = document.querySelector('#symbolsTable tbody');
+                tableBody.innerHTML = '';
+
+                // First, add favorite symbols to the top
+                const favoriteSymbolsData = data.filter(symbol => favoriteSymbols.includes(symbol.symbol));
+                const nonFavoriteSymbolsData = data.filter(symbol => !favoriteSymbols.includes(symbol.symbol));
+
+                favoriteSymbolsData.forEach(symbol => {
+                    const row = `<tr>
+                            <td>${symbol.symbol}</td>
+                            <td>${symbol.askPrice}</td>
+                            <td>${symbol.bidPrice}</td>
+                            <td><button onclick="toggleFavorite('${symbol.symbol}')">Remove from Favorites</button></td>
+                        </tr>`;
+                    tableBody.innerHTML += row;
+                });
+
+                nonFavoriteSymbolsData.forEach(symbol => {
+                    const row = `<tr>
+                            <td>${symbol.symbol}</td>
+                            <td>${symbol.askPrice}</td>
+                            <td>${symbol.bidPrice}</td>
+                            <td><button onclick="toggleFavorite('${symbol.symbol}')">Add to Favorites</button></td>
+                        </tr>`;
+                    tableBody.innerHTML += row;
+                });
+            })
+            .catch(error => console.error('Error:', error));
+    }
+
+    function fetchFavorites() {
+        fetch('/api/symbols/favorites')
+            .then(response => response.json())
+            .then(data => {
+                favoriteSymbols = data.map(favorite => favorite.symbol);
+                const favoritesList = document.getElementById('favoritesList');
+                favoritesList.innerHTML = '';
+                favoriteSymbols.forEach(symbol => {
+                    const li = document.createElement('li');
+                    li.textContent = symbol;
+                    favoritesList.appendChild(li);
+                });
+                fetchSymbols();  // Refresh the symbols list with updated favorites
+            })
+            .catch(error => console.error('Error:', error));
+    }
+
+    function toggleFavorite(symbol) {
+        const isFavorite = favoriteSymbols.includes(symbol);
+        if (isFavorite) {
+            removeFromFavorites(symbol);
+        } else {
+            addToFavorites(symbol);
+        }
+    }
+
+    function addToFavorites(symbol) {
+        fetch('/api/symbols/favorites', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ symbol }),
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Added to favorites:', data);
+                fetchFavorites();
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+    }
+
+    function removeFromFavorites(symbol) {
+        fetch(`/api/symbols/favorites`, {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ symbol }),
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Removed from favorites:', data);
+                fetchFavorites();
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+    }
+
+    // Initial fetch
+    fetchSymbols();
+    fetchFavorites();
+
+    // Refresh data every 10 seconds
+    setInterval(() => {
+        fetchSymbols();
+        fetchFavorites();
+    }, 10000);
+</script>
+</body>
+</html>
